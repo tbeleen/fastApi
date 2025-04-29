@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from app.routers import usuarios
 
 app = FastAPI(
     title="API de gestión de usuarios",
@@ -7,3 +8,4 @@ app = FastAPI(
 )
 
 #Traeremos lo de las rutas(routers):
+app.include_router(usuarios.router)
