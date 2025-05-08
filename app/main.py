@@ -8,4 +8,6 @@ app = FastAPI(
 )
 
 #Traeremos lo de las rutas(routers):
-app.include_router(usuarios.router)
+app.include_router(usuarios.router, prefix="/usuarios")
+
+
