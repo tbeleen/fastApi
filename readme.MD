@@ -20,30 +20,31 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 Instala las dependencias con:
 
 ```bash
-* pip install -r requirements.txt
+pip install -r requirements.txt```
 Contenido de requirements.txt:
 txt
-
+```
 oracledb
 bcrypt
 passlib[bcrypt]
 fastapi[all]
 uvicorn
-
+```
 # ⚙️ Configuración de base de datos
 Modifica el archivo database.py con tus credenciales Oracle:
-* python
-* import oracledb
-
-connection = oracledb.connect(
+``` python
+ import oracledb
+```
+``` connection = oracledb.connect(
     user="tu_usuario",
     password="tu_contraseña",
     dsn="localhost/XEPDB1"  # o tu configuración en Oracle Cloud
-)
+)```
 # ▶️ Ejecución
 Para correr el servidor de desarrollo:
-* bash
-* uvicorn app.main:app --reload
+``` bash
+ uvicorn app.main:app --reload
+```
 # 🔒 Seguridad
 * 	Las contraseñas se almacenan en la base de datos con hash bcrypt.
 *	Se utilizan tokens JWT para autenticación en endpoints protegidos.
