@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import usuarios
+from app.routers import usuarios, despacho, pago
 
 app = FastAPI(
     title="API de gestión de usuarios",
@@ -9,5 +9,7 @@ app = FastAPI(
 
 #Traeremos lo de las rutas(routers):
 app.include_router(usuarios.router, prefix="/usuarios")
+app.include_router(pago.router)
+app.include_router(despacho.router)
 
 

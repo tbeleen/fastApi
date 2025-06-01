@@ -1,0 +1,8 @@
+pip install oracledb
+pip install bcrypt
+pip install uvicorn
+pip install fastapi[all]
+pip install passlib[bcrypt]
+
+
+

@@ -3,8 +3,8 @@ from fastapi import HTTPException
 def get_conexion():
     try:
         conexion = oracledb.connect(
-            user="api_usuario",
-            password="api_usuario",
+            user="api_sitioferremas",
+            password="api_sitioferremas",
             dsn="localhost:1521/XE"
         )
         return conexion
