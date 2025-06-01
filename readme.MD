@@ -30,7 +30,7 @@ bcrypt
 passlib[bcrypt]
 fastapi[all]
 uvicorn
-
+```
 # ⚙️ Configuración de base de datos
 Modifica el archivo database.py con tus credenciales Oracle:
 ``` python
@@ -41,6 +41,7 @@ Modifica el archivo database.py con tus credenciales Oracle:
     password="tu_contraseña",
     dsn="localhost/XEPDB1"  # o tu configuración en Oracle Cloud
 )
+```
 # ▶️ Ejecución
 Para correr el servidor de desarrollo:
 ``` bash
