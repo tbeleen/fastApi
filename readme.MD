@@ -20,7 +20,8 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 Instala las dependencias con:
 
 ```bash
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 Contenido de requirements.txt:
 txt
 ```
@@ -29,17 +30,17 @@ bcrypt
 passlib[bcrypt]
 fastapi[all]
 uvicorn
-```
+
 # ⚙️ Configuración de base de datos
 Modifica el archivo database.py con tus credenciales Oracle:
 ``` python
  import oracledb
-```
+
 ``` connection = oracledb.connect(
     user="tu_usuario",
     password="tu_contraseña",
     dsn="localhost/XEPDB1"  # o tu configuración en Oracle Cloud
-)```
+)
 # ▶️ Ejecución
 Para correr el servidor de desarrollo:
 ``` bash
